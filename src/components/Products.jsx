@@ -2,6 +2,7 @@ import './Products.css'
 import { AddToCartIcon } from './Icons'
 
 export function Products ({ products }) {
+
   return (
     <main className='products'>
       <ul>
