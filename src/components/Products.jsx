@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import './Products.css'
 import { AddToCartIcon } from './Icons'
 
