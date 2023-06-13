@@ -29,10 +29,10 @@ const UPDATE_STATE_BY_ACTION = {
       if(productInCartIndex >= 0){
         //STRUCTURED CLONE -- readable
         //First way to copy (deeper) of arrays and objects are structuredClone (it´s not the efficient way but with no much code it work fine)
-        // const newState = structuredClone(state)
-        // newState[productInCartIndex].quantity += 1
-        // updateLocalStorage(newState)
-        // return newState
+        const newState = structuredClone(state)
+        newState[productInCartIndex].quantity += 1
+        updateLocalStorage(newState)
+        return newState
 
         //USING MAP -- common
         // const newState = state.map(item => {
